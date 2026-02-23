@@ -1,0 +1,30 @@
+.container {
+    background-color: chocolate;
+    margin: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+    height: 40em;
+    flex-direction: K;
+}
+.items {
+    background-color: aquamarine;
+    width: fit-content;
+    height: 40px;
+    margin: 10px;
+}
+.box1 {
+    align-self: flex-start;
+    /* order: 3; */
+    /* flex-grow: 1; */
+}
+.box2 {
+    align-self: center;
+}
+.box3 {
+    align-self: flex-end;
+}
+.items:nth-child(odd) {
+    background-color: black;
+}
