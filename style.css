@@ -20,21 +20,28 @@ body {
 }
 
 .sedans {
-    background-color: #e28525;
+    --test: #e28525;
+    background-color: var(--test);
+    /* background-color: #e28525; */
     border-radius: 5px 0 0 5px;
 }
 
 .suvs {
-    background-color: #016972;
+    --test: #016972;
+    background-color: var(--test);
+    /* background-color: #016972; */
 }
 
 .luxury {
-    background-color: #00403f;
+    --test: #00403f;
+    background-color: var(--test);
+    /* background-color: #00403f; */
     border-radius: 0 5px 5px 0;
 }
 
 p, h1 {
     margin: 0;
+    color: #fff;
 }
 
 p {
@@ -47,9 +54,10 @@ button {
     height: 3em;
     background-color: white;
     border-radius: 25px;
+    color: var(--test);
 }
 
-.button1 {
+/* .button1 {
     color: #e28525;
 }
 
@@ -59,8 +67,9 @@ button {
 
 .button3 {
     color: #00403f;
-}
+} */
 
 img {
     width: 30%;
 }
+/* contri */
