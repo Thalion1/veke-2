@@ -13,63 +13,58 @@ body {
 
 .subcon {
     width: fit-content;
-    height: 20rem;
-    padding: 1em;
+    height: 25rem;
+    padding: 3em;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+}
+
+.subcon:nth-child() {
+    margin: 3em;
 }
 
 .sedans {
-    --test: #e28525;
-    background-color: var(--test);
+    --base-color: #e28525;
+    background-color: var(--base-color);
     /* background-color: #e28525; */
     border-radius: 5px 0 0 5px;
 }
 
 .suvs {
-    --test: #016972;
-    background-color: var(--test);
+    --base-color: #016972;
+    background-color: var(--base-color);
     /* background-color: #016972; */
 }
 
 .luxury {
-    --test: #00403f;
-    background-color: var(--test);
+    --base-color: #00403f;
+    background-color: var(--base-color);
     /* background-color: #00403f; */
     border-radius: 0 5px 5px 0;
-}
-
-p, h1 {
-    margin: 0;
-    color: #fff;
-}
-
-p {
-    margin-top: 1em;
 }
 
 button {
     margin-top: 5em;
     width: 75%;
-    height: 3em;
+    height: 3.5em;
     background-color: white;
     border-radius: 25px;
-    color: var(--test);
+    color: var(--base-color);
+    border: 0;
 }
 
-/* .button1 {
-    color: #e28525;
+p, h1 {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
 }
-
-.button2 {
-    color: #016972;
-}
-
-.button3 {
-    color: #00403f;
-} */
 
 img {
-    width: 30%;
+    width: 40%;
 }
-/* contri */
+/*
+Contribution
+https://stackoverflow.com/questions/45580218/css-set-color-to-parents-background-color css variabel
+
+*/
