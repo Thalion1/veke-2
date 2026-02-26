@@ -1,4 +1,6 @@
 body {
+    --background-color: white;
+    background-color: var(--background-color);
     margin: 0;
     border: 0;
     padding: 0;
@@ -48,7 +50,7 @@ button {
     margin-top: 5em;
     width: 75%;
     height: 3.5em;
-    background-color: white;
+    background-color: var(--background-color);
     border-radius: 25px;
     color: var(--base-color);
     border: 0;
@@ -63,6 +65,14 @@ p, h1 {
 img {
     width: 40%;
 }
+
+#darkmode {
+    color: white;
+    width: fit-content;
+    background-color: black;
+    /* box-shadow: ; */
+}
+
 /*
 Contribution
 https://stackoverflow.com/questions/45580218/css-set-color-to-parents-background-color css variabel
