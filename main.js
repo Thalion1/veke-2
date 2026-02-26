@@ -1,13 +1,11 @@
-function color_changer() {
-    var style = window.getComputedStyle(document.body).getPropertyValue('--background-color');
-    // var colors = window.getComputedStyle(document.body).getPropertyValue('--background-color');
-    var r = document.querySelector(':root');
-    if (style === 'white') {// TODO Rplace color
-        r.style.setProperty('--background-color', 'green');
+function color_changer() {// 
+    var style = document.querySelector('body');
+    if (getComputedStyle(style).getPropertyValue('--background-color') === 'white') {
+        style.style.setProperty('--background-color', 'black');
         console.log('test white');
         return
     } else {
-        document.documentElement.style.cssText = "--background-color: black";
+        style.style.setProperty('--background-color', 'white');
         console.log('test not white');
         return
     }
